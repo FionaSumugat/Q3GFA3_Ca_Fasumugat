@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Hands-On Activity</title>
+</head>
+<body>
+    <script>
+        var rannum= Math.random() * 1001;
+        let x = Math.round(rannum);
+        document.write("Randomly generated number: " + x + "<br>");  
+
+        var y= x.toString();
+        if (y.length==1){
+            document.write ("Breakdown: " + y + "<br>");
+        }
+
+        else if (y.length==2){
+            var text=y;
+            var a=text.charAt(0);
+            var b=text.charAt(1);
+            a= a * 10;
+            document.write("Breakdown: " + a + ", " + b + "<br>");
+        }
+
+        else if (y.length==3){
+            var text=y;
+            var a=text.charAt(0);
+            var b=text.charAt(1);
+            var c=text.charAt(2);
+            a= a * 100;
+            b= b * 10;
+            document.write("Breakdown: " + a + ", " + b + ", " + c + "<br>");
+        }
+
+        var d= new Date();
+        document.write(d);
+    </script>
+</body>
+</html>
